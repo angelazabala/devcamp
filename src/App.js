@@ -13,6 +13,12 @@ const ObjectTest = {
   }
 }
 
+// class Person extends Component {
+//   render(){
+//     return();
+//   }
+// }
+
 
 class App extends Component {
   _renderObject(){
@@ -40,10 +46,23 @@ class App extends Component {
           <p>This is an Object</p>
           {this._renderObject()}
         </div>
+        <div>
+          <input type="text"/>Name
+        </div>
+        <div>
+          <label>
+            <input name="gender" type="checkbox"/>Male
+          </label>
+        </div>
+        <div>
+          <label>
+            <input name="gender" type="checkbox"/>Female 
+          </label>
+        </div>
+        <button>This does nothing</button>
       </div>
     );
   }
 }
-
 
 export default App;
